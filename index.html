@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>PJr — Portfolio</title>
+</head>
+<body>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scrollTop" class="scroll-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== HEADER ===== -->
+  <header class="hero-section">
+    <div class="header-inner">
+      <div class="initial"><span>PJr</span></div>
+      <nav>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div id="modal" class="modal">
+          <div class="handle" id="handle"></div>
+          <p class="modal-greeting">Navigation</p>
+          <ul>
+            <li><a href="#home"><i class="fas fa-house"></i>Home</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+            <li><a href="#skills"><i class="fas fa-code"></i>Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-folder-open"></i>Projects</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+          </ul>
+          <button type="button" class="submit-btn2">
+            <i class="fas fa-file-arrow-down"></i> Download CV
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-content" id="home">
+    <div class="hero-text">
+      <p class="hero-label">Hello, I'm</p>
+      <h1 class="hero-name">Prince Jr</h1>
+      <h2 class="hero-title">Front-end Dev <span class="divider">|</span> Aspiring Data Analyst</h2>
+      <p class="hero-sub">Turning ideas into interfaces & data into decisions.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-ring">
+        <span>PJr</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="section-inner">
+      <div class="section-tag">01 — About Me</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a <strong>Front-end Developer</strong> based in Cameroon, with solid skills in HTML, CSS and JavaScript. I'm currently transitioning into <strong>Data Analytics</strong>, building expertise in SQL, Python, Power BI and Excel.</p>
+          <p>My goal is to combine my passion for clean interfaces with the power of data — helping businesses make smarter decisions through both great design and meaningful insights.</p>
+          <p>I'm on a mission to work with international companies, master English, and bring my skills to the global stage. 🚀</p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Cameroon 🇨🇲</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-briefcase"></i>
+              <span>Open to Remote Work</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-language"></i>
+              <span>French & English</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Years in Web Dev</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Data Skills Learning</span>
+          </div>
+          <div class="stat-card accent">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Ambition Level</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="section-inner">
+      <div class="section-tag">02 — Skills</div>
+      <h2 class="section-title">What I Do</h2>
+
+      <div class="skills-grid">
+        <!-- Front-end -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Front-end Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag solid">HTML5</span>
+            <span class="tag solid">CSS3</span>
+            <span class="tag solid">JavaScript</span>
+            <span class="tag outline">React <span class="soon">soon</span></span>
+          </div>
+        </div>
+
+        <!-- Data -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-chart-bar"></i>
+            <h3>Data Analytics</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag learning">SQL <span class="badge">learning</span></span>
+            <span class="tag learning">Python <span class="badge">learning</span></span>
+            <span class="tag learning">Power BI <span class="badge">learning</span></span>
+            <span class="tag learning">Excel <span class="badge">learning</span></span>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud & Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag outline">AWS <span class="soon">soon</span></span>
+            <span class="tag outline">Azure <span class="soon">soon</span></span>
+            <span class="tag solid">Git & GitHub</span>
+            <span class="tag solid">VS Code</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-brain"></i>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag solid">Analytical Thinking</span>
+            <span class="tag solid">Problem Solving</span>
+            <span class="tag solid">Fast Learner</span>
+            <span class="tag solid">Remote Ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="section-inner">
+      <div class="section-tag">03 — Projects</div>
+      <h2 class="section-title">My Work</h2>
+      <p class="section-sub">Projects I've built and analyses I've done. More coming soon as I grow my data skills.</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img web">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h3>Personal Portfolio</h3>
+            <p>A responsive, mobile-first portfolio showcasing my front-end skills. Dark mode design with smooth animations and a bottom-sheet navigation.</p>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="link-btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img data">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>SQL</span><span>Excel</span><span>Power BI</span>
+            </div>
+            <h3>Sales Data Analysis</h3>
+            <p>Analysis of a retail company's sales data — identifying trends, top-performing regions, and recommending strategies using SQL queries and Power BI dashboards.</p>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="link-btn primary"><i class="fas fa-chart-bar"></i> View Dashboard</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img python">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Python</span><span>Pandas</span><span>Matplotlib</span>
+            </div>
+            <h3>Customer Churn Analysis</h3>
+            <p>Used Python and Pandas to identify customers at risk of leaving a telecom company — cleaning data, visualizing patterns, and providing actionable insights.</p>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="link-btn primary"><i class="fas fa-file-alt"></i> View Report</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="section-inner">
+      <div class="section-tag">04 — Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-sub">Open to remote opportunities, freelance projects, and collaborations worldwide.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:juniorpro2098@gmail.com" class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">juniorpro2098@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/prince-jr" target="_blank" class="contact-card">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <p class="contact-value">linkedin.com/in/Prince Jr</p>
+            </div>
+          </a>
+          <a href="https://x.com/princejr_dev" target="_blank" class="contact-card">
+            <div class="contact-icon"><i class="fab fa-x-twitter"></i></div>
+            <div>
+              <p class="contact-label">X (Twitter)</p>
+              <p class="contact-value">@princejr_dev</p>
+            </div>
+          </a>
+          <a href="https://github.com/mprincegame-art" target="_blank" class="contact-card">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <p class="contact-value">github.com/Prince Jr</p>
+            </div>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Jones Baldwin" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="jones@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">PJr</p>
+      <p class="footer-text">Built using HTML, CSS & JavaScript</p>
+      <p class="footer-copy">© 2025 PJr — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
