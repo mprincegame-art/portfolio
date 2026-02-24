@@ -56,9 +56,9 @@ git clone https://github.com/PJr/portfolio.git
 
 ## 📬 Contact
 
-- 📧 Email: [votre@email.com](mailto: juniorpro2098@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/PJr](https://linkedin.com/in/princejr)
-- 🐦 𝕏: [@PJr](https://x.com/princejr_dev)
+- 📧 Email: juniorpro2098@gmail.com
+- 💼 LinkedIn: https://linkedin.com/in/princejr
+- 🐦 𝕏: https://x.com/princejr_dev
 
 ---
 
