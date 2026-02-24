@@ -96,16 +96,52 @@ modal.addEventListener("touchend", () => {
 // ===== SCROLL TO TOP =====
 const scrollTopBtn = document.getElementById("scrollTop");
 
+let scrollTimer;
+
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 400) {
+
+  // montre si on est descendu un peu
+  if (window.scrollY > 150) {
     scrollTopBtn.classList.add("visible");
-  } else {
-    scrollTopBtn.classList.remove("visible");
   }
+
+  // reset timer à chaque scroll
+  clearTimeout(scrollTimer);
+
+  // cache après 1s sans mouvement
+  scrollTimer = setTimeout(() => {
+    scrollTopBtn.classList.remove("visible");
+  }, 1000);
+
 });
 
 scrollTopBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+// ===== HANDLE TOGGLE + SWIPE =====
+const handle = document.getElementById("handle"); // ton div handle
+
+// Tap = toggle
+handle.addEventListener("click", () => {
+  modal.classList.contains("active") ? closeModal() : openModal();
+});
+
+// Swipe down depuis le handle uniquement
+let hStartY = 0;
+
+handle.addEventListener("touchstart", (e) => {
+  hStartY = e.touches[0].clientY;
+}, { passive: true });
+
+handle.addEventListener("touchend", (e) => {
+  const hEndY = e.changedTouches[0].clientY;
+  const diff = hEndY - hStartY;
+
+  if (diff > 60) closeModal(); // swipe vers bas
 });
 
 // ===== SCROLL REVEAL =====
