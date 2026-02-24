@@ -45,7 +45,7 @@ const toggle = document.getElementById("menu-toggle");
 function openModal() {
   modal.classList.add("active");
   overlay.classList.add("active");
-  document.body.style.overflow = "hidden";
+  document.documentElement.style.overflow = "hidden";
 }
 
 function closeModal() {
@@ -53,7 +53,7 @@ function closeModal() {
   overlay.classList.remove("active");
   modal.style.transform = "";
   modal.style.transition = "";
-  document.body.style.overflow = "";
+  document.documentElement.style.overflow = "";
 }
 
 toggle.addEventListener("click", openModal);

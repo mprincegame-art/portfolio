@@ -22,7 +22,8 @@
 
 html { 
   overflow-x: hidden;
-  scrollbar-gutter: stable; }
+  scrollbar-gutter: stable; 
+}
 
 body {
   background-color: var(--secondary-color);
@@ -74,8 +75,8 @@ body {
   position: fixed;
   inset: 0;
   z-index: 10;
-  background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(6px);
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -101,17 +102,18 @@ body {
   border-radius: 50%;
   font-size: 1rem;
   cursor: pointer;
-  z-index: 500;
+  z-index: 5;
   box-shadow: 0 4px 20px var(--glow);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .scroll-top.visible { 
-  opacity: 0.6; 
+  opacity: 0.7; 
   transform: translateX(-50%) translateY(0); 
 }
 
 .scroll-top:hover {
-  transform: translateX(-50%) translateY(-4px); /* toujours garder le translateX */
+  transform: translateX(-50%) translateY(-2px);
   box-shadow: 0 8px 30px var(--glow);
 }
 
@@ -141,10 +143,12 @@ body {
   color: var(--secondary-color);
   letter-spacing: -1px;
 }
+
 .initial span {
   position: relative;
   display: inline-block;
 }
+
 .initial span::after {
   content: '';
   position: absolute;
@@ -168,8 +172,15 @@ body {
   -webkit-tap-highlight-color: transparent;
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
-.menu-toggle:hover { box-shadow: 0 0 18px rgba(16,185,129,0.5); transform: scale(1.05); }
-.menu-toggle:active { transform: scale(0.96); }
+
+.menu-toggle:hover { 
+  box-shadow: 0 0 18px rgba(16,185,129,0.5); 
+  transform: scale(1.05); 
+}
+  
+.menu-toggle:active { 
+  transform: scale(0.96); 
+}
 
 /* ===== MODAL ===== */
 .modal {
@@ -267,6 +278,23 @@ body {
   color: var(--primary-color);
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(16,185,129,0.3);
+}
+
+a.submit-btn2 {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a.submit-btn2 i {
+  color: var(--secondary-color);
+}
+
+a.submit-btn2:hover {
+  color: var(--primary-color);
+}
+
+a.submit-btn2:hover i {
+  color: var(--primary-color);
 }
 
 /* ===== HERO CONTENT ===== */
