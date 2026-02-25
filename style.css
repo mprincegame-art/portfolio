@@ -760,6 +760,20 @@ a.submit-btn2:hover i {
   font-weight: 600;
 }
 
+.availability-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 16px;
+  padding: 18px 20px;
+}
+
+.availability-card .contact-value {
+  color: var(--primary-color);
+}
+
 /* ===== FORM ===== */
 .contact-form { display: flex; flex-direction: column; gap: 20px; }
 
