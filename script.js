@@ -202,3 +202,22 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// ===== PAGE LOADER =====
+const loader = document.getElementById('loader');
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    loader.classList.add('hidden');
+  }, 1200);
+});
+
+// ===== SCROLL PROGRESS BAR =====
+const progressBar = document.getElementById('progressBar');
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = (scrollTop / docHeight) * 100;
+  progressBar.style.width = progress + '%';
+});
