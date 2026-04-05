@@ -11,7 +11,7 @@
   <meta property="og:title" content="PJr — Portfolio">
   <meta property="og:description" content="Front-end Developer and Aspiring Data Analyst based in Cameroon. Available for remote work worldwide.">
   <meta property="og:image" content="assets/photo.png">
-  <meta property="og:url" content="https://tonusername.github.io">
+  <meta property="og:url" content="https://mprincegame-art.github.io">
   <meta property="og:type" content="website">
 
 <!-- Twitter/X Card -->
@@ -24,22 +24,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
   
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
+  
   <meta name="msapplication-TileColor" content="#10B981">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
   <meta name="theme-color" content="#10B981">
   
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
@@ -70,34 +71,37 @@
       <div class="initial"><span>PJr</span></div>
       
       <nav>
-        
-        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
-          <i class="fas fa-bars"></i></button>
-        
-        <div id="modal" class="modal">
-        <div class="handle" id="handle"></div>
-          
-          <p class="modal-greeting">Navigation</p>
-          
-          <ul>
-            <li><a href="#home"><i class="fas fa-house"></i>Home</a></li>
-            
-            <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
-            
-            <li><a href="#skills"><i class="fas fa-code"></i>Skills</a></li>
-            
-            <li><a href="#projects"><i class="fas fa-folder-open"></i>Projects</a></li>
-            
-            <li><a href="#testimonials"><i class="fas fa-star"></i>Testimonials</a></li>
-            
-            <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
-          </ul>
-          
-          <a href="assets/cv.pdf" download class="submit-btn2"><i class="fas fa-file-arrow-down"></i> Download CV
-          </a>
-        </div>
-        
-      </nav>
+  <!-- Menu desktop -->
+  <ul class="desktop-nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <a href="assets/cv.pdf" download class="btn-cv">Download CV</a>
+  </ul>
+  
+  <!-- Bouton hamburger mobile -->
+  <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <!-- Modal mobile (inchangé) -->
+  <div id="modal" class="modal">
+    <div class="handle" id="handle"></div>
+    <p class="modal-greeting">Navigation</p>
+    <ul>
+      <li><a href="#home"><i class="fas fa-house"></i>Home</a></li>
+      <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+      <li><a href="#skills"><i class="fas fa-code"></i>Skills</a></li>
+      <li><a href="#projects"><i class="fas fa-folder-open"></i>Projects</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+    </ul>
+    <a href="assets/cv.pdf" download class="submit-btn2">
+      <i class="fas fa-file-arrow-down"></i> Download CV
+    </a>
+  </div>
+</nav>
       
     </div>
   </header>
@@ -337,77 +341,12 @@
       </div>
     </div>
   </section>
-  
-  
-  <!-- ===== TESTIMONIALS ===== -->
-<section id="testimonials" class="section testimonials-section">
-  <div class="section-inner">
-    <div class="section-tag">04 — Testimonials</div>
-    <h2 class="section-title">What They Say</h2>
-    <p class="section-sub">Feedback from clients and collaborators I've worked with.</p>
-
-    <div class="testimonials-grid">
-
-      <div class="testimonial-card">
-        <div class="testimonial-quote">
-          <i class="fas fa-quote-left"></i>
-        </div>
-        <p class="testimonial-text">Prince delivered exactly what I needed — a clean, fast and responsive website. Very professional and easy to work with. I highly recommend him!</p>
-        <div class="testimonial-author">
-          <div class="testimonial-initials">JD</div>
-          <div class="testimonial-info">
-            <p class="testimonial-name">John Doe</p>
-            <p class="testimonial-role">CEO, Startup Cameroon</p>
-          </div>
-          <a href="https://linkedin.com" target="_blank" class="testimonial-link">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-quote">
-          <i class="fas fa-quote-left"></i>
-        </div>
-        <p class="testimonial-text">Working with PJr was a great experience. He understood my vision quickly and turned it into a beautiful landing page. Will definitely work with him again.</p>
-        <div class="testimonial-author">
-          <div class="testimonial-initials">SM</div>
-          <div class="testimonial-info">
-            <p class="testimonial-name">Sarah M.</p>
-            <p class="testimonial-role">Marketing Manager</p>
-          </div>
-          <a href="https://linkedin.com" target="_blank" class="testimonial-link">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-quote">
-          <i class="fas fa-quote-left"></i>
-        </div>
-        <p class="testimonial-text">Excellent work on our data dashboard. PJr has a rare ability to make complex data easy to understand. A reliable and talented professional.</p>
-        <div class="testimonial-author">
-          <div class="testimonial-initials">AK</div>
-          <div class="testimonial-info">
-            <p class="testimonial-name">Alexis K.</p>
-            <p class="testimonial-role">Operations Director</p>
-          </div>
-          <a href="https://linkedin.com" target="_blank" class="testimonial-link">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
   <!-- ===== CONTACT ===== -->
   <section id="contact" class="section contact-section">
     <div class="section-inner">
-      <div class="section-tag">05 — Contact</div>
+      <div class="section-tag">04 — Contact</div>
       <h2 class="section-title">Let's Connect</h2>
       <p class="section-sub">Open to remote opportunities, freelance projects, and collaborations worldwide.</p>
 
@@ -437,7 +376,7 @@
             <div class="contact-icon"><i class="fab fa-x-twitter"></i></div>
             <div>
               <p class="contact-label">𝕏 (Twitter)</p>
-              <p class="contact-value">Follow me on 𝕏</p>
+              <p class="contact-value">DM me on 𝕏</p>
             </div>
           </a>
           
