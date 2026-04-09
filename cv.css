@@ -12,7 +12,7 @@
   --font-mono: 'Space Mono', monospace;
   --glow: rgba(16, 185, 129, 0.25);
   --aside-width: 280px;
-  --aside-collapsed: 40px;
+  --aside-collapsed: 15px;
 }
 
 /* ===== RESET ===== */
@@ -134,12 +134,12 @@ body {
 .cv-aside {
   width: var(--aside-width);
   min-height: calc(100vh - 60px);
+  height: calc(100vh - 60px);
   background: var(--surface);
   border-right: 1px solid var(--border);
   padding: 32px 20px;
   position: sticky;
   top: 60px;
-  height: calc(100vh - 60px);
   overflow-y: auto;
   flex-shrink: 0;
   transition: width 0.35s cubic-bezier(0.4,0,0.2,1);
@@ -154,7 +154,7 @@ body {
 /* ===== ASIDE TOGGLE (mobile) ===== */
 .aside-toggle {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   right: -14px;
   transform: translateY(-50%);
@@ -165,10 +165,11 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 10;
+  z-index: 60;
   box-shadow: 0 4px 12px var(--glow);
   transition: transform 0.3s ease;
 }
+
 .aside-toggle i {
   font-size: 0.7rem;
   color: var(--secondary-color);
@@ -498,10 +499,11 @@ body {
     left: 0;
     height: calc(100vh - 60px);
     width: var(--aside-width);
-    transform: translateX(calc(-100% + var(--aside-collapsed)));
+    transform: translateX(calc(-101% + var(--aside-collapsed)));
     transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
     z-index: 50;
-    overflow: visible;
+    overflow-x: visible;
+    overflow-y: auto;
   }
 
   /* Aside ouvert */

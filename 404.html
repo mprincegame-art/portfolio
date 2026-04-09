@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PJr — 404 Not Found</title>
   
-  <meta name="description" content="PJr — Front-end Developer and aspiring Data Analyst based in Cameroon. Available for remote work worldwide.">
+  <meta name="description" content="Page Not Found">
   
   <!-- Open Graph -->
   <meta property="og:title" content="PJr — 404 Not Found">
   <meta property="og:description" content="Oops! This page doesn't exist.">
   <meta property="og:image" content="assets/photo.png">
-  <meta property="og:url" content="https://tonusername.github.io/404">
+  <meta property="og:url" content="https://mprincegame-art.github.io/404">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_EN">
 
 <!-- Twitter/X Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -20,26 +21,28 @@
   <meta name="twitter:description" content="Oops! This page doesn't exist. Head back to my portfolio.">
   <meta name="twitter:image" content="assets/photo.png">
   
+  <!-- Links -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
   
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  
+  <!-- Colors -->
   <meta name="msapplication-TileColor" content="#10B981">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
   <meta name="theme-color" content="#10B981">
   
   <style>
@@ -48,11 +51,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 24px;
+      padding: 100px 24px 40px;
       text-align: center;
       position: relative;
       overflow: hidden;
-    }
+}
 
     .error-page::before {
       content: '404';
@@ -72,23 +75,24 @@
     .error-inner {
       position: relative;
       z-index: 1;
-      max-width: 500px;
+      max-width: clamp(500px, 85vw, 1000px);
+      width: 100%;
     }
 
     .error-code {
       font-family: 'Space Mono', monospace;
-      font-size: clamp(5rem, 15vw, 9rem);
+      font-size: clamp(10rem, 20vw, 15rem);
       font-weight: 700;
       color: #10B981;
       line-height: 1;
-      margin-bottom: 8px;
+      margin-bottom: 81px;
       opacity: 0;
       animation: fadeUp 0.6s ease forwards 0.2s;
     }
 
     .error-title {
       font-family: 'Syne', sans-serif;
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-size: clamp(2rem, 6vw, 15rem);
       font-weight: 800;
       color: #ffffff;
       margin-bottom: 16px;
@@ -97,7 +101,7 @@
     }
 
     .error-sub {
-      font-size: 1rem;
+      font-size: clamp(1rem, 2.5vw, 5rem);
       color: #94A3B8;
       line-height: 1.7;
       margin-bottom: 40px;
@@ -115,7 +119,7 @@
 
     .error-actions {
       display: flex;
-      gap: 14px;
+      gap: 16px;
       justify-content: center;
       flex-wrap: wrap;
       opacity: 0;
@@ -123,8 +127,9 @@
     }
 
     .error-ring {
-      width: 120px;
-      height: 120px;
+      width: clamp(300px, 18vw, 300px);
+      height: clamp(300px, 18vw, 300px);
+      margin-bottom: 40px;
       border-radius: 50%;
       border: 2px solid #10B981;
       display: flex;
@@ -147,8 +152,30 @@
     }
 
     .error-ring i {
-      font-size: 2.5rem;
+      font-size: clamp(2.5rem, 6vw, 5rem);
       color: #10B981;
+    }
+    
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    @media (max-width: 640px) {
+      .error-page { padding: 40px 20px; }
+      .error-ring { 
+      width: 100px; 
+      height: 100px; 
+      }
     }
   </style>
 </head>

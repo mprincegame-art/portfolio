@@ -35,20 +35,25 @@ A responsive, mobile-first personal portfolio built with pure HTML, CSS and Java
 ```
 portfolio/
 ├── index.html            # Main page
+├── cv.html               # View my cv
 ├── projects.html         # All projects page
 ├── 404.html              # Custom error page
-├── style.css             # All styles & animations
+├── style.css             # All index/404 styles & animations
+├── cv.css                # All cv styles
+├── projects.css          # All projects styles
 ├── script.js             # Main interactivity & logic
+├── cv.js                 # Aside toggle & custom cursor
 ├── projects.js           # Projects filter logic
-├── manifest.json         # Web app manifest
-├── favicon.ico           # Favicon
-├── favicon-16x16.png
-├── favicon-32x32.png
-├── apple-icon-*.png      # Apple touch icons
-├── android-icon-*.png    # Android icons
+├── sitemap.xml           # Indexation
 └── assets/
-    ├── photo.png         # Profile photo
-    └── cv.pdf            # Downloadable CV
+    ├── favicon.ico           # Favicon
+    ├── favicon-16x16.png
+    ├── favicon-32x32.png
+    ├── apple-icon-*.png      # Apple touch icons
+    ├── android-icon-*.png    # Android icons
+    ├── ms-icon-144x144.png   # Icon
+    ├── photo.png             # Profile photo
+    └── cv.pdf                # Downloadable CV
 ```
 
 ---
@@ -58,6 +63,7 @@ portfolio/
 | Page | Description |
 |------|-------------|
 | `index.html` | Hero, About, Skills, Projects preview, Contact |
+| `cv.html` | View my CV |
 | `projects.html` | All projects with category filter (All / Web / Data / Python) |
 | `404.html` | Custom error page with navigation back to home |
 
