@@ -137,7 +137,7 @@ body {
   height: calc(100vh - 60px);
   background: var(--surface);
   border-right: 1px solid var(--border);
-  padding: 32px 20px;
+  padding: 25px 20px;
   position: sticky;
   top: 60px;
   overflow-y: auto;
@@ -156,18 +156,18 @@ body {
   display: none;
   position: fixed;
   top: 50%;
-  right: -14px;
+  left: calc(var(--aside-collapsed) - 15px);
   transform: translateY(-50%);
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   background: var(--primary-color);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 60;
+  z-index: 200;
   box-shadow: 0 4px 12px var(--glow);
-  transition: transform 0.3s ease;
+  transition: left 0.35s cubic-bezier(0.4,0,0.2,1);
 }
 
 .aside-toggle i {
@@ -496,13 +496,13 @@ body {
   .cv-aside {
     position: fixed;
     top: 60px;
-    left: 0;
+    left: 3px;
     height: calc(100vh - 60px);
     width: var(--aside-width);
-    transform: translateX(calc(-101% + var(--aside-collapsed)));
+    transform: translateX(calc(-100% + var(--aside-collapsed)));
     transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
     z-index: 50;
-    overflow-x: visible;
+    overflow-x: hidden;
     overflow-y: auto;
   }
 
@@ -516,12 +516,12 @@ body {
   }
 
   /* Rotation icône quand ouvert */
-  .cv-aside.open .aside-toggle i {
+  .aside-toggle.open i {
     transform: rotate(180deg);
   }
 
   .cv-main {
-    padding: 24px 20px;
+    padding: 20px 38px;
     width: 100%;
   }
 
@@ -540,5 +540,5 @@ body {
 }
 
 @media (max-width: 480px) {
-  .cv-main { padding: 20px 16px; }
+  .cv-main { padding: 20px 35px; }
 }

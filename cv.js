@@ -32,11 +32,20 @@ const asideToggle = document.getElementById('asideToggle');
 if (asideToggle) {
   asideToggle.addEventListener('click', () => {
     cvAside.classList.toggle('open');
+    asideToggle.classList.toggle('open')
+
+    if (cvAside.classList.contains('open')) {
+      asideToggle.style.left = '266px';
+    } else {
+      asideToggle.style.left = '';
+    }
   });
 
   // Ferme l'aside si on clique sur le main
   document.getElementById('cvMain').addEventListener('click', () => {
     cvAside.classList.remove('open');
+    asideToggle.classList.remove('open')
+    asideToggle.style.left = '';
   });
 }
 
