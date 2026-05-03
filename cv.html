@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PJr — Curriculum Vitae</title>
+
+  <!-- FAVICON -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+<link rel="favicon" type="image/x-icon" sizes="48x48" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="192x192" href="assets/android-chrome-192x192.png" />
+<link rel="apple-touch-icon" sizes="512x512" href="assets/android-chrome-512x512.png" />
+<link rel="manifest" href="site.webmanifest" />
+<meta name="theme-color" content="#0F172A" />
+
+<!-- SEO ESSENTIALS -->
+<meta name="description" content="PJr — Aspiring Data Analyst based in Cameroon." />
+<meta name="keywords" content="website, web developer, freelance, python, data analyst, data analytics, excel, web designer, sql" />
+<meta name="author" content="Prince Jr" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://princejr.netlify.app/cv.html" />
+
+<!-- OPEN GRAPH (Facebook, WhatsApp, LinkedIn) -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://princejr.netlify.app/cv.html" />
+<meta property="og:title" content="PJr — Curriculum Vitae" />
+<meta property="og:description" content="Aspiring Data Analyst based in Cameroon." />
+<meta property="og:image" content="https://princejr.netlify.app/assets/ximage.png" />
+<meta property="og:locale" content="en_CM" />
+<meta property="og:site_name" content="PJr — Curriculum Vitae" />
+
+<!-- ═══ TWITTER CARD ═══ -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="PJr — Curriculum Vitae" />
+<meta name="twitter:description" content="Aspiring Data Analyst based in Cameroon." />
+<meta name="twitter:image" content="https://princejr.netlify.app/assets/ximage.png" />
+<meta name="twitter:creator" content="Prince Jr" />
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="cv.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="cv-topbar">
+    <a href="index.html" class="cv-back">
+      <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+    <p class="cv-topbar-title">Curriculum Vitae</p>
+    <a class="cv-download-btn" id="downloadBtn">
+      <i class="fas fa-file-arrow-down"></i> Download CV
+    </a>
+  </div>
+
+  <div class="modal-overlay" id="modal">
+  <div class="modal">
+    <p>Do you want to download this CV?</p>
+    
+    <div class="actions">
+      <button class="cancel">Cancel</button>
+      <button class="confirm">Yes, download</button>
+    </div>
+  </div>
+</div>
+
+  <!-- ===== CV WRAPPER ===== -->
+  <div class="cv-wrapper">
+
+    <!-- ===== ASIDE — Personal Info ===== -->
+    <div class="aside-toggle" id="asideToggle">
+        <i class="fas fa-chevron-right" id="toggleIcon"></i>
+    </div>
+    
+    <aside class="cv-aside" id="cvAside">
+
+      <!-- Photo -->
+      <div class="aside-photo-wrap">
+        <div class="aside-photo-ring">
+          <img src="assets/photo.png" alt="PJr" class="aside-photo">
+        </div>
+        <h2 class="aside-name">Prince Jr</h2>
+        <p class="aside-role">Data Analyst</p>
+      </div>
+
+      <!-- Contact -->
+      <div class="aside-block">
+        <h3 class="aside-block-title">Contact</h3>
+        <div class="aside-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Cameroon</span>
+        </div>
+        <a href="https://www.linkedin.com/in/prince-jr" target="_blank" class="aside-info-item">
+          <i class="fab fa-linkedin"></i>
+          <span>Visit my linkedin profile</span>
+        </a>
+        <a href="https://x.com/princejr_dev" target="_blank" class="aside-info-item">
+          <i class="fab fa-x-twitter"></i>
+          <span>DM on 𝕏</span>
+        </a>
+        <a href="https://wa.me/237690645344" target="_blank" class="aside-info-item">
+          <i class="fab fa-whatsapp"></i>
+          <span>FM on Whatsapp</span>
+        </a>
+        <a href="https://github.com/princejr-dev" target="_blank" class="aside-info-item">
+          <i class="fab fa-github"></i>
+          <span>My GitHub account</span>
+        </a>
+      </div>
+
+      <!-- Languages -->
+      <div class="aside-block">
+        <h3 class="aside-block-title">Languages</h3>
+        <div class="aside-lang">
+          <span>French</span>
+          <span class="lang-level native">Native</span>
+        </div>
+        <div class="aside-lang">
+          <span>English</span>
+          <span class="lang-level intermediate">Intermediate</span>
+        </div>
+      </div>
+
+      <!-- Interests -->
+      <div class="aside-block">
+        <h3 class="aside-block-title">Interests</h3>
+        <div class="aside-interests">
+          <span class="interest-tag"><i class="fas fa-baseball-ball"></i> Tennis</span>
+          <span class="interest-tag"><i class="fas fa-person-running"></i> Jogging</span>
+          <span class="interest-tag"><i class="fas fa-tv"></i> Kdrama</span>
+          <span class="interest-tag"><i class="fas fa-book"></i> Reading</span>
+          <span class="interest-tag"><i class="fas fa-code"></i> Coding</span>
+        </div>
+      </div>
+
+      <!-- Availability -->
+      <div class="aside-block">
+        <h3 class="aside-block-title">Availability</h3>
+        <div class="aside-info-item">
+          <i class="fas fa-clock"></i>
+          <span>Mon – Fri : 9AM – 5PM</span>
+        </div>
+        <div class="aside-info-item">
+          <i class="fas fa-clock"></i>
+          <span>Sat : 8AM – 12AM</span>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ===== MAIN — Professional Info ===== -->
+    <main class="cv-main" id="cvMain">
+
+      <!-- Professional Summary -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">
+          <i class="fas fa-user"></i> Professional Summary
+        </h2>
+        <p class="cv-text">Aspiring Data Analyst with a background in front-end development, experienced in building responsive websites using HTML, CSS and JavaScript. Currently focused on data analytics, developing practical skills in SQL, Python, Power BI and Excel through hands-on projects. Strong analytical mindset, self-driven learner, with a clear goal of working remotely on data-driven projects with international teams.</p>
+      </section>
+
+      <!-- Work Experience -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">
+          <i class="fas fa-briefcase"></i> Work Experience
+        </h2>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <div>
+              <h3 class="cv-item-title">Freelance Web Developer</h3>
+              <p class="cv-item-sub">Self-Employed — Cameroon</p>
+            </div>
+            <span class="cv-item-date">December 2025 – Present</span>
+          </div>
+          <ul class="cv-list">
+            <li>Designed and developed responsive websites for clients using HTML, CSS and JavaScript</li>
+            <li>Applied mobile-first design principles to ensure compatibility across all devices</li>
+            <li>Delivered projects independently</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- Education & Certifications -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">
+          <i class="fas fa-graduation-cap"></i> Education & Certifications
+        </h2>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <div>
+              <h3 class="cv-item-title">Self-taught Web Developer</h3>
+              <p class="cv-item-sub">Online Resources & Practice</p>
+            </div>
+            <span class="cv-item-date">October 2025 – Present</span>
+          </div>
+          <ul class="cv-list">
+            <li>Mastered HTML5, CSS3 and JavaScript through structured self-learning</li>
+            <li>Built real-world projects including a complete professional portfolio</li>
+          </ul>
+        </div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <div>
+              <h3 class="cv-item-title">Data Analytics Bootcamp</h3>
+              <p class="cv-item-sub">Alex The Analyst — YouTube</p>
+            </div>
+            <span class="cv-item-date">April 2026 – Present</span>
+          </div>
+          <ul class="cv-list">
+            <li>Currently completing a full data analytics curriculum covering SQL, Excel, Python and Power BI</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- Skills -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">
+          <i class="fas fa-code"></i> Key Skills
+        </h2>
+
+        <div class="cv-skills-grid">
+          <div class="cv-skill-group">
+            <h4 class="cv-skill-label">Data Analytics</h4>
+            <div class="cv-skill-tags">
+              <span class="cv-tag solid">Excel</span>
+              <span class="cv-tag learning">SQL</span>
+              <span class="cv-tag learning">Power BI</span>
+              <span class="cv-tag learning">Python</span>
+            </div>
+          </div>
+
+          <div class="cv-skill-group">
+            <h4 class="cv-skill-label">Web Development</h4>
+            <div class="cv-skill-tags">
+              <span class="cv-tag solid">HTML5</span>
+              <span class="cv-tag solid">CSS3</span>
+              <span class="cv-tag solid">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="cv-skill-group">
+            <h4 class="cv-skill-label">Cloud & Tools</h4>
+            <div class="cv-skill-tags">
+              <span class="cv-tag solid">Git & GitHub</span>
+              <span class="cv-tag solid">VS Code</span>
+              <span class="cv-tag outline">AWS</span>
+            </div>
+          </div>
+
+          <div class="cv-skill-group">
+            <h4 class="cv-skill-label">Soft Skills</h4>
+            <div class="cv-skill-tags">
+              <span class="cv-tag solid">Analytical Thinking</span>
+              <span class="cv-tag solid">Problem Solving</span>
+              <span class="cv-tag solid">Attention to detail</span>
+              <span class="cv-tag solid">Fast Learner</span>
+              <span class="cv-tag solid">Remote Ready</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- References -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">
+          <i class="fas fa-star"></i> References
+        </h2>
+        <p class="cv-text">Available upon request.</p>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="cv.js"></script>
+</body>
+</html>

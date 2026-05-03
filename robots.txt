@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://princejr.netlify.app/sitemap.xml

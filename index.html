@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PJr — Portfolio</title>
+
+  <!-- FAVICON -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+<link rel="favicon" type="image/x-icon" sizes="48x48" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="192x192" href="assets/android-chrome-192x192.png" />
+<link rel="apple-touch-icon" sizes="512x512" href="assets/android-chrome-512x512.png" />
+<link rel="manifest" href="site.webmanifest" />
+<meta name="theme-color" content="#0F172A" />
+
+<!-- SEO ESSENTIALS -->
+<meta name="description" content="PJr — Aspiring Data Analyst based in Cameroon. Available for remote work worldwide." />
+<meta name="keywords" content="website, web developer, freelance, python, data analyst, data analytics, excel, web designer, sql" />
+<meta name="author" content="Prince Jr" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://princejr.netlify.app" />
+
+<!-- OPEN GRAPH (Facebook, WhatsApp, LinkedIn) -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://princejr.netlify.app" />
+<meta property="og:title" content="PJr — Portfolio" />
+<meta property="og:description" content="Aspiring Data Analyst based in Cameroon." />
+<meta property="og:image" content="https://princejr.netlify.app/assets/ximage.png" />
+<meta property="og:locale" content="en_CM" />
+<meta property="og:site_name" content="PJr — Portfolio" />
+
+<!-- ═══ TWITTER CARD ═══ -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="PJr — Portfolio" />
+<meta name="twitter:description" content="Aspiring Data Analyst based in Cameroon." />
+<meta name="twitter:image" content="https://princejr.netlify.app/assets/ximage.png" />
+<meta name="twitter:creator" content="Prince Jr" />
+  
+  <!-- Fonts -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- ═══ SCHEMA.ORG — Données structurées Google ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalPortfolio",
+  "name": "PJr — Portfolio",
+  "url": "https://princejr.netlify.app",
+  "description": "Aspiring Data Analyst based in Cameroon.",
+  "founder": {
+    "@type": "Person",
+    "name": "Prince Jr",
+    "sameAs": "https://twitter.com/princejr_dev"
+  },
+  "areaServed": "CM",
+  "availableLanguage": "en"
+}
+</script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BYSJS25Z64"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BYSJS25Z64');
+</script>
+</head>
+
+<body>
+  
+  <!-- PAGE LOADER -->
+<div id="loader" class="loader">
+  <div class="loader-ring">
+    <img src="assets/initial-img.png" alt="Initial Logo" class="initial-img">
+  </div>
+</div>
+
+<!-- PROGRESS BAR -->
+<div id="progressBar" class="progress-bar"></div>
+
+  <!-- OVERLAY -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scrollTop" class="scroll-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- ===== HEADER ===== -->
+  <header class="hero-section">
+    <div class="header-inner">
+      
+      <div class="initial-img-badge">
+        <div class="initial-img-ring">
+          <img src="assets/initial-img.png" alt="Initial Logo" class="initial-img">
+        </div>
+      </div>
+      
+      <nav>
+  <!-- Menu desktop -->
+  <ul class="desktop-nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <a href="cv.html" class="btn-cv">
+      <i data-lucide="eye"></i> View CV
+    </a>
+  </ul>
+  
+  <!-- Bouton hamburger mobile -->
+  <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <!-- Modal mobile (inchangé) -->
+  <div id="modal" class="modal">
+    <div class="handle" id="handle"></div>
+    <p class="modal-greeting">Navigation</p>
+    <ul>
+      <li><a href="#home"><i class="fas fa-house"></i>Home</a></li>
+      <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+      <li><a href="#skills"><i class="fas fa-code"></i>Skills</a></li>
+      <li><a href="#projects"><i class="fas fa-folder-open"></i>Projects</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+    </ul>
+    <a href="cv.html" class="submit-btn2">
+      <i data-lucide="eye"></i> View CV
+    </a>
+  </div>
+</nav>
+      
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-content" id="home">
+    <div class="hero-text">
+      
+      <p class="hero-label">Hello, I'm</p>
+      
+      <h1 class="hero-name">Prince Jr</h1>
+      
+      <h2 class="hero-title">Aspiring Data Analyst <span class="divider">|</span> Business & AI</h2>
+     
+      <p class="hero-sub">Turning data into insights and insights into business decisions.</p>
+      
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+      </div>
+    </div>
+    
+    <div class="hero-badge">
+      <div class="badge-ring">
+        <img src="assets/photo.png" alt="Profile photo" class="profile-photo">
+      </div>
+    </div>
+
+    <div class="bar-chart">
+      <span style="--h: 30%"></span>
+      <span style="--h: 60%"></span>
+      <span style="--h: 40%"></span>
+      <span style="--h: 60%"></span>
+      <span style="--h: 30%"></span>
+      <span style="--h: 88%"></span>
+      <span style="--h: 55%"></span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    
+    <div class="section-inner">
+      <div class="section-tag">01 — About Me</div>
+      
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm an aspiring <strong> Data Analyst</strong>, building strong skills in Excel, SQL, Python and Power BI. I previously worked with front-end technologies like HTML5, CSS3 and JavaScript, which strengthened my understanding of logic, structure and problem-solving.</p>
+          <p>My focus is now on turning data into clear insights that support better business decisions. I aim to combine analytical thinking with practical tools to help businesses understand their data and act on it effectively.</p>
+          
+          <div class="about-info">
+            <div class="info-item">
+              <i data-lucide="map-pin"></i>
+              <span>Cameroon</span>
+            </div>
+            
+            <div class="info-item">
+              <i data-lucide="briefcase"></i>
+              <span>Open to Remote Work</span>
+            </div>
+            
+            <div class="info-item">
+              <i data-lucide="languages"></i>
+              <span>English & French</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Months in Data Analysis</span>
+          </div>
+          
+          <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Data Skills Learning</span>
+          </div>
+          
+          <div class="stat-card accent">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Ambition Level</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="section-inner">
+      <div class="section-tag">02 — Skills</div>
+      <h2 class="section-title">What I Do</h2>
+
+      <div class="skills-grid">
+
+        <!-- DATA -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i data-lucide="bar-chart-3"></i>
+            <h3>Data Analytics</h3>
+          </div>
+          
+          <div class="skill-tags">
+            <span class="tag solid">Excel</span>
+            <span class="tag learning">SQL <span class="badge">learning</span></span>
+            <span class="tag learning">Power BI <span class="badge">learning</span></span>
+            <span class="tag learning">Python <span class="badge">learning</span></span>
+          </div>
+        </div>
+       
+        <!-- FRONT-END -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i data-lucide="laptop"></i>
+            <h3>Web Development</h3>
+          </div>
+
+          <div class="skill-tags">
+            <span class="tag solid">HTML5</span>
+            <span class="tag solid">CSS3</span>
+            <span class="tag solid">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- CLOUD -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i data-lucide="cloud"></i>
+            <h3>Cloud & Tools</h3>
+          </div>
+
+          <div class="skill-tags">
+            <span class="tag solid">Git & GitHub</span>
+            <span class="tag solid">VS Code</span>
+            <span class="tag outline">AWS <span class="soon">soon</span></span>
+          </div>
+        </div>
+
+        <!-- SOFT SKILLS -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i data-lucide="brain"></i>
+            <h3>Soft Skills</h3>
+          </div>
+
+          <div class="skill-tags">
+            <span class="tag solid">Analytical Thinking</span>
+            <span class="tag solid">Problem Solving</span>
+            <span class="tag solid">Attention to detail</span>
+            <span class="tag solid">Fast Learner</span>
+            <span class="tag solid">Remote collaboration ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="section-inner">
+      
+      <div class="section-tag">03 — Projects</div>
+      
+      <h2 class="section-title">My Work</h2>
+      
+      <p class="section-sub">Projects I've built and analyses I've done. More coming soon as I grow my data skills.</p>
+      
+      <div class="projects-grid">
+        
+        <!-- PROJECT #1 -->
+         <div class="project-card" data-category="web">
+          <div>
+            <img src="assets/portfolio_pic.png" class="project-img web">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h3>Portfolio</h3>
+            <p>A responsive, mobile-first website e-commerce showcasing my front-end skills. Dark mode design with smooth animations.</p>
+            <div class="project-links">
+              <a href="https://github.com/princejr-dev" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://princejr.netlify.app" class="link-btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- PROJECT #2 -->
+        <div class="project-card">
+          <div>
+            <img src="assets/stack_picture.png" class="project-img web">
+          </div>
+          
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            
+            <h3>BlogStack</h3>
+            
+            <p>A blog website with smooth animations for AI Analysis, strategies, tendances, and a bottom-sheet navigation — 
+              to get AI in 2026.</p>
+            
+            <div class="project-links">
+              <a href="https://github.com/princejr-dev" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
+              <a onclick="alert('Live demo coming soon!')" class="link-btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card" data-category="web">
+          <div>
+            <img src="assets/pjr_picture.png" class="project-img web">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTMl</HTMl></span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h3>PJR Web Services</h3>
+            <p>A modern, conversion-optimized landing page with animated hero section, and a fully responsive layout built from scratch.</p>
+            <div class="project-links">
+              <a href="https://github.com/princejr-dev" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://pjrwebservices.netlify.app" class="link-btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- OTHER PROJECTS BUTTON -->
+         <div class="other-projects">
+          <a href="projects.html" class="btn-secondary">
+          <i data-lucide="folder-open"></i> View All Projects
+          </a>
+         </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="section-inner">
+      <div class="section-tag">04 — Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-sub">Open to remote opportunities, internships, and collaborations in data analytics. Interested in roles involving Excel, SQL, Python, and Power BI, with a focus on turning data into business insights.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          
+          <!-- LINKEDIN -->
+          <a href="https://www.linkedin.com/in/prince-jr" target="_blank" class="contact-card">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+          </a>
+          
+          <!-- X (TWITTER) -->
+          <a href="https://x.com/princejr_dev" target="_blank" class="contact-card">
+            <div class="contact-icon"><i class="fab fa-x-twitter"></i></div>
+          </a>
+          
+          <!-- GITHUB -->
+          <a href="https://github.com/princejr-dev" target="_blank" class="contact-card">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+          </a>
+        </div>
+
+    <!-- AVAILABILITY -->
+          <div class="availability-card">
+           <div class="contact-icon"><i data-lucide="clock"></i></div>
+           
+        <div>
+          <p class="contact-label">Availability</p>
+          <p class="contact-value">Mon – Fri : 9AM – 5PM</p>
+          <p class="contact-value">Sat : 8AM – 12AM</p>
+        </div>
+      </div>
+    
+    <div class="response-time">
+      <i class="fas fa-clock"></i>
+      <p>I typically respond within <span>24 hours</span></p>
+    </div>
+
+<!-- CONTACT FORM -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mqewgdnw" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jones Baldwin" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="jones@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn-primary full-width">
+            <i data-lucide="send"></i> Send Message
+          </button>
+        </form>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">Prince Jr</p>
+      
+      <p class="footer-text">Built using HTML, CSS & JavaScript</p>
+      
+      <p class="footer-copy">&copy; 2026 Prince Jr — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js"></script>
+  <script>
+   lucide.createIcons();
+  </script>
+
+</body>
+</html>
