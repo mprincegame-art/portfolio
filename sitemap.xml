@@ -3,24 +3,24 @@
 
   <!-- Main page -->
   <url>
-    <loc>https://princejr.netlify.app/</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://princejr-dev.github.io/portfolio/</loc>
+    <lastmod>2026-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Projects page -->
   <url>
-    <loc>https://princejr.netlify.app/projects.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://princejr-dev.github.io/portfolio/projects.html</loc>
+    <lastmod>2026-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Cv page -->
   <url>
-    <loc>https://princejr.netlify.app/cv.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://princejr-dev.github.io/portfolio/cv.html</loc>
+    <lastmod>2026-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
