@@ -88,7 +88,7 @@ git clone https://github.com/princejr-dev/portfolio.git
 
 ## 📬 Contact
 
-- 📧 Email: [juniorpro2098@gmail.com](mailto:juniorpro2098@gmail.com)
+- 📧 Email: [princejr.dev@gmail.com](mailto:princejr.dev@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/prince-jr](https://www.linkedin.com/in/prince-jr)
 - 🐦 X: [@princejr_dev](https://x.com/princejr_dev)
 - 🐙 GitHub: [github.com/princejr-dev](https://github.com/princejr-dev)
